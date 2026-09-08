@@ -1,0 +1,21 @@
+# Downloads brutos do Visdata3 (grandes, regeneráveis, não versionados)
+visdata3-download-*.csv
+bpc_2226.csv
+
+# Arquivos de teste/experimentais e docx temporários do Word
+validacao_output.txt
+check_novo_visdata.txt
+~$*.docx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit
+.streamlit/secrets.toml
+streamlit_log.txt
+
+# Configuração/estado local do Claude Code (não faz parte do projeto)
+.claude/
