@@ -109,6 +109,9 @@ def listar_arquivos_bpc_mensal(pasta: str) -> list[tuple[str, str]]:
 def carregar_bpc_mensal(caminho: str) -> pd.DataFrame:
     df = pd.read_csv(caminho, encoding="utf-8")
     df = df.rename(columns={"Código IBGE": "codigo_ibge_6"})
+    # "Nome do Municipio" e "uf" já vêm do unidade_mirante_porte_pop_renomeado.csv
+    # (colunas "municipio" e "uf") — descartar aqui evita colisão de nomes no merge.
+    df = df.drop(columns=["Nome do Municipio", "uf"], errors="ignore")
     return df
 
 

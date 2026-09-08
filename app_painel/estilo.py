@@ -44,20 +44,18 @@ CSS = f"""
         border-radius: 8px;
         padding: 0.8rem 1rem;
     }}
-    div[data-testid="stMetricLabel"] {{
-        color: {CINZA_TEXTO};
-    }}
-    div[data-testid="stMetricValue"] {{
-        color: {AZUL_ESCURO_GOVBR};
-    }}
 
     section[data-testid="stSidebar"] {{
-        background-color: {CINZA_CLARO};
         border-right: 3px solid {AZUL_GOVBR};
     }}
 
-    h2, h3 {{
-        color: {AZUL_ESCURO_GOVBR};
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3,
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] span {{
+        color: {AZUL_ESCURO_GOVBR} !important;
     }}
 </style>
 """

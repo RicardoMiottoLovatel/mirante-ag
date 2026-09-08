@@ -15,6 +15,7 @@ venv/
 
 # Streamlit
 .streamlit/secrets.toml
+streamlit_*.log
 streamlit_log.txt
 
 # Configuração/estado local do Claude Code (não faz parte do projeto)
